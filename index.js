@@ -63,9 +63,12 @@ function updateCardsVisibility() {
 
   cards.forEach((card) => {
     const cardCategory = card.dataset.category;
-    const cardTitle = card.querySelector(".card__title").textContent.toLowerCase();
+    const cardTitle = card
+      .querySelector(".card__title")
+      .textContent.toLowerCase();
 
-    const matchesCategory = currentCategory === "all" || cardCategory === currentCategory;
+    const matchesCategory =
+      currentCategory === "all" || cardCategory === currentCategory;
     const matchesSearch = cardTitle.includes(searchQuery);
 
     if (matchesCategory && matchesSearch) {
@@ -77,7 +80,7 @@ function updateCardsVisibility() {
   });
 
   let noResultsMsg = document.getElementById("no-results-msg");
-  
+
   if (visibleCount === 0) {
     if (!noResultsMsg) {
       noResultsMsg = document.createElement("p");

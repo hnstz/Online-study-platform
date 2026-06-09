@@ -19,7 +19,9 @@
   font-style: normal;
   font-display: swap;
 }
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -28,8 +30,8 @@
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  color: #1E212C;
-  background-color: #FFFFFF;
+  color: #1e212c;
+  background-color: #ffffff;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
@@ -40,7 +42,8 @@ img {
   height: auto;
 }
 
-button, input {
+button,
+input {
   font-family: inherit;
 }
 
@@ -73,7 +76,7 @@ ul {
   line-height: 1.5;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #1E212C;
+  color: #1e212c;
   margin-bottom: 8px;
 }
 
@@ -81,7 +84,7 @@ ul {
   font-weight: 900;
   font-size: clamp(28px, 4vw, 46px);
   line-height: 1.3;
-  color: #1E212C;
+  color: #1e212c;
 }
 
 .courses__controls {
@@ -110,7 +113,7 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.6;
-  color: #9A9CA5;
+  color: #9a9ca5;
   padding: 10px 20px;
   border-radius: 4px;
   border: 1px solid transparent;
@@ -122,12 +125,12 @@ ul {
   line-height: 1;
 }
 .courses__filter-btn:hover {
-  color: #FF3F3A;
+  color: #ff3f3a;
 }
 
 .courses__filter-btn--active {
-  color: #FF3F3A;
-  border: 1px solid #FF3F3A;
+  color: #ff3f3a;
+  border: 1px solid #ff3f3a;
 }
 
 .search-form {
@@ -141,24 +144,24 @@ ul {
   width: 100%;
   height: 44px;
   padding: 11px 40px 11px 16px;
-  background-color: #FFFFFF;
-  border: 1px solid #D7DADD;
+  background-color: #ffffff;
+  border: 1px solid #d7dadd;
   border-radius: 4px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  color: #1E212C;
+  color: #1e212c;
   transition: border-color 0.2s ease;
 }
 .search-form__input::-moz-placeholder {
-  color: #9A9CA5;
+  color: #9a9ca5;
 }
 .search-form__input::placeholder {
-  color: #9A9CA5;
+  color: #9a9ca5;
 }
 .search-form__input:focus {
   outline: none;
-  border-color: #FF3F3A;
+  border-color: #ff3f3a;
 }
 
 .search-form__input::-webkit-search-decoration,
@@ -188,15 +191,21 @@ ul {
 .card {
   display: flex;
   flex-direction: column;
-  background: #FFFFFF;
-  border: 1px solid #E5E8ED;
+  background: #ffffff;
+  border: 1px solid #e5e8ed;
   border-radius: 4px;
-  box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04);
+  box-shadow:
+    0px 4px 4px -4px rgba(30, 33, 44, 0.03),
+    0px 12px 10px -6px rgba(154, 156, 165, 0.04);
   overflow: hidden;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
 }
 .card:hover {
-  box-shadow: 0px 12px 12px -4px rgba(30, 33, 44, 0.05), 0px 24px 20px -6px rgba(154, 156, 165, 0.06);
+  box-shadow:
+    0px 12px 12px -4px rgba(30, 33, 44, 0.05),
+    0px 24px 20px -6px rgba(154, 156, 165, 0.06);
   transform: translateY(-4px);
 }
 
@@ -209,7 +218,7 @@ ul {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .card__body {
@@ -226,7 +235,7 @@ ul {
   border-radius: 4px;
   font-size: 14px;
   line-height: 1.5;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
@@ -234,7 +243,7 @@ ul {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
-  color: #1E212C;
+  color: #1e212c;
   margin-bottom: 20px;
 }
 
@@ -249,13 +258,13 @@ ul {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.5;
-  color: #FF4242;
+  color: #ff4242;
 }
 
 .card__author {
   font-size: 18px;
   line-height: 1.5;
-  color: #787A80;
+  color: #787a80;
 }
 
 .courses__load-more-wrapper {
@@ -270,17 +279,17 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.6;
-  color: #1E212C;
+  color: #1e212c;
   transition: color 0.2s ease;
 }
 .courses__load-more svg path {
   transition: fill 0.2s ease;
 }
 .courses__load-more:hover {
-  color: #FF3F3A;
+  color: #ff3f3a;
 }
 .courses__load-more:hover svg path {
-  fill: #FF3F3A;
+  fill: #ff3f3a;
 }
 
 .courses__no-results {
@@ -288,7 +297,7 @@ ul {
   text-align: center;
   font-size: 18px;
   font-weight: 700;
-  color: #787A80;
+  color: #787a80;
   padding: 40px 0;
 }
 
@@ -312,4 +321,4 @@ ul {
   top: 1004px;
   right: -273px;
   transform: rotate(-180deg);
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
