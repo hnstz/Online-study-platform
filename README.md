@@ -1,7 +1,7 @@
 # Online-study-platform
 Проект представляет собой веб-приложение для просмотра и фильтрации онлайн-курсов.
 
-**Ссылка на деплой:** https://online-platform-jhk9gq7h0-hnstzs-projects.vercel.app/
+**Ссылка на деплой:** https://online-platform-gamma.vercel.app
 
 ## Технологический стек
 1) HTML5: разметка структуры приложения.
